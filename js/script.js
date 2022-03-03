@@ -18,10 +18,11 @@
                 const parolaReverse= parolaArray.reverse();
             
             // Utilizziamo un'altro metodo degli array join() in modo da concatenare tutti gli elementi dell'array (Fonte MDN)    
-                const parolaUnita = parolaReverse.join();
-            // Creiamo la condizione di verifica
-                if (parola === parolaReverse){
-                    console.log("è palindroma")
+                const parolaUnita = parolaReverse.join("");
+            
+                // Creiamo la condizione di verifica
+                if (parola === parolaUnita){
+                   console.log("è palindroma")
                     return true;
                 }else{
                     console.log("non è palindroma")
@@ -29,8 +30,8 @@
                    
                 }
         };
-
-        console.log(isPalindrome(parolaUtente));
+    console.log(isPalindrome(parolaUtente));
+        
 
 
 
@@ -43,3 +44,7 @@
         Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
         Dichiariamo chi ha vinto.
 */
+
+        // Prompt Utente
+        // const numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 5;"))
+        // console.log(numeroUtente);
