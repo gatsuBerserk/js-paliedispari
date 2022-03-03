@@ -66,8 +66,13 @@
                 console.log(pcRandomNumber + " " + "numero pc");
 
             // 3) sommare Il  numero scelto dall'utente con il numero random del pc 
+                const sum = userNumber + pcRandomNumber; 
+                console.log(sum);
 
             // 4) verificare se la somma è pari o dispari 
+                
+
+
 
             // 5) Comparare la verifica della somma con la scelta dell'utente(pari o dispari)
                 
