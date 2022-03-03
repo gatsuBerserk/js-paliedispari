@@ -70,11 +70,16 @@
                 console.log(sum);
 
             // 4) verificare se la somma è pari o dispari 
-                
+            function isEven (number) {
+                if ( number % 2 === 0) {
+                    return true;
+                } else{ 
+                    return false;
+                } 
+            }; 
+            console.log(isEven(sum));
 
-
-
-            // 5) Comparare la verifica della somma con la scelta dell'utente(pari o dispari)
-                
+            // 5) Comparare la verifica della somma con la scelta dell'utente(pari o dispari) 
+          
 
             
