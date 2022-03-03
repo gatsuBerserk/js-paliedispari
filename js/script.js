@@ -45,6 +45,31 @@
         Dichiariamo chi ha vinto.
 */
 
-        // Prompt Utente
-        // const numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 5;"))
-        // console.log(numeroUtente);
+        // Prompt Utente 
+                   
+            const userWord= prompt( "Pari o dispari?"); 
+            console.log(userWord);
+            const userNumber= parseInt(prompt("Inserisci un numero da 1 a 5"));
+            console.log(userNumber)
+            if ((userNumber > 5) || (isNaN(userNumber))){
+             console.error("inserisci correttamente i dati");
+            }; 
+            // 2) generare un numero random per il pc  
+            // numero random
+                // Funzione per numeri random
+                function randomNumber (min, max) {
+                    return Math.floor(Math.random() * (max - min) + min);
+                };
+                // Variabile da associare alla funzione ( nelle parentesi segliamo il range di numeri)
+                const pcRandomNumber= randomNumber(1, 5);  
+
+                console.log(pcRandomNumber + " " + "numero pc");
+
+            // 3) sommare Il  numero scelto dall'utente con il numero random del pc 
+
+            // 4) verificare se la somma è pari o dispari 
+
+            // 5) Comparare la verifica della somma con la scelta dell'utente(pari o dispari)
+                
+
+            
