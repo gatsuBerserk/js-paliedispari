@@ -45,8 +45,7 @@
         Dichiariamo chi ha vinto.
 */
 
-        // Prompt Utente 
-                   
+        // 1) Prompt Utente   
             const userWord= prompt( "Pari o dispari?"); 
             console.log(userWord);
             const userNumber= parseInt(prompt("Inserisci un numero da 1 a 5"));
@@ -54,8 +53,9 @@
             if ((userNumber > 5) || (isNaN(userNumber))){
              console.error("inserisci correttamente i dati");
             }; 
-            // 2) generare un numero random per il pc  
-            // numero random
+        // 2) Generare un numero random per il pc  
+            
+            // Numero random
                 // Funzione per numeri random
                 function randomNumber (min, max) {
                     return Math.floor(Math.random() * (max - min) + min);
@@ -65,11 +65,11 @@
 
                 console.log(pcRandomNumber + " " + "numero pc");
 
-            // 3) sommare Il  numero scelto dall'utente con il numero random del pc 
+        // 3) sommare Il  numero scelto dall'utente con il numero random del pc 
                 const sum = userNumber + pcRandomNumber; 
-                console.log(sum);
+                console.log(sum + "" + " Somma tra i Numeri Utente e pc" );
 
-            // 4) verificare se la somma è pari o dispari 
+        // 4) verificare se la somma è pari o dispari 
             function isEven (number) {
                 if ( number % 2 === 0) {
                     return true;
@@ -79,7 +79,13 @@
             }; 
             console.log(isEven(sum));
 
-            // 5) Comparare la verifica della somma con la scelta dell'utente(pari o dispari) 
-          
+        // 5) Comparare la verifica della somma con la scelta dell'utente(pari o dispari) 
+            // -- Ciclo [ Se la somma è pari e la scelta dell'utente è pari ( e viceversa) { l'utente ha vinto} altrimenti ha perso!]
+                if ((isEven(sum)) && (userWord == 'pari') || (!isEven(sum)) && (userWord == 'dispari') ) {
+                    console.log('Hai vinto!');
+                } else{
+                console.log('Hai perso!');
+                };
+                
 
             
